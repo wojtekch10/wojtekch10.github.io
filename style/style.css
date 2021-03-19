@@ -132,7 +132,7 @@ ul#menu li a
 ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     color: #FFF;
-    background: #068900;
+    background: palevioletred;
 }
 
 #zawartosc_strony
