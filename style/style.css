@@ -132,7 +132,7 @@ ul#menu li a
 ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     color: #FFF;
-    background: palevioletred;
+    background: darkred;
 }
 
 #zawartosc_strony
@@ -172,7 +172,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 
 .pasek_boczny li a.wybrane_menu
 {
-    color: palevioletred;
+    color: darkred;
     text-decoration: none;
 }
 
