@@ -258,7 +258,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     cursor: pointer;
 }
 
-/* remove the outter borders of the cells */
+/* usuniecie krawedzi */
 .cell:first-child,
 .cell:nth-child(2),
 .cell:nth-child(3)
@@ -281,14 +281,14 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     border-bottom: none;
 }
 
-/* setting pointer if cell is taken*/
+/* zakaz na kursorze */
 .cell.x,
 .cell.circle
 {
     cursor: not-allowed;
 }
 
-/* drawing the X */
+/* rysowanie X */
 .cell.x::before,
 .cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::before,
@@ -299,7 +299,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     font-size: 100px;
 }
 
-/* drawing the O */
+/* rysowanie O */
 .cell.circle::before,
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::before,
