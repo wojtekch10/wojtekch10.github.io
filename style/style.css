@@ -5,6 +5,7 @@ html
 
 body
 {
+    color: whitesmoke;
     font: normal .80em 'trebuchet ms', arial, sans-serif;
     background-image: url("background.jpg");
     height: 100%;
@@ -137,11 +138,12 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 
 #zawartosc_strony
 {
+    color: whitesmoke;
     width: 837px;
     overflow: hidden;
     margin: 0 auto 0 auto;
     padding: 20px 24px 20px 37px;
-    background: indianred;
+    background: #8b2e2d;
 }
 
 .pasek_boczny
@@ -203,7 +205,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 
 #zawartosc
 {
-    text-align: left;
+    position: relative;
     width: 595px;
     padding: 0;
 }
@@ -211,4 +213,184 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 #zawartosc ul
 {
     margin: 2px 0 22px 0px;
+}
+
+.button
+{
+    font: normal 100% 'lucida sans unicode', arial, sans-serif;
+    background-color: #8b2e2d;
+    border: none;
+    color: whitesmoke;
+    display: grid;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+.button:hover
+{
+    background-color: darkred;
+    color: whitesmoke;
+    border-color: #8b2e2d;
+}
+
+.board
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+}
+
+.cell
+{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* remove the outter borders of the cells */
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3)
+{
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1)
+{
+    border-left: none;
+}
+.cell:nth-child(3n + 3)
+{
+    border-right: none;
+}
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8)
+{
+    border-bottom: none;
+}
+/* this is above the hover so the hover can overwrite this */
+.cell.x::before,
+.cell.x::after,
+.cell.circle::before,
+.cell.circle::after
+{
+    background-color: whitesmoke;
+}
+/* to have a lightgray X or O when we hover over */
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after
+{
+    background-color: #8b4745;
+}
+
+/* setting pointer if cell is taken*/
+.cell.x,
+.cell.circle
+{
+    cursor: not-allowed;
+}
+
+/* drawing the X */
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after
+{
+    content: '';
+    position: absolute;
+    width: calc(var(--mark-size)* .15);
+    height: var(--mark-size);
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before
+{
+    transform: rotate(45deg);
+}
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after
+{
+    transform: rotate(-45deg);
+}
+
+/* drawing the O */
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after
+{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before
+{
+    width: var(--mark-size);
+    height: var(--mark-size);
+}
+
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after
+{
+    width: calc(var(--mark-size)*.7);
+    height: calc(var(--mark-size)*.7);
+    background-color: #8b2e2d;
+}
+
+.winning-message
+{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .8);
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.restartButton
+{
+    font-size: 3rem;
+    background-color: #8b2e2d;
+    border: 1px solid darkred;
+    padding: .25em .5em;
+    margin-top:5px; ;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.restartButton:hover
+{
+    background-color: darkred;
+    color: whitesmoke;
+    border-color: #8b2e2d;
+}
+.winning-message.show
+{
+    display: flex;
+}
+
+:root
+{
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size)*.9);
 }
