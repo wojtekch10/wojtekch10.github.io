@@ -235,6 +235,16 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     border-color: #8b2e2d;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root
+{
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size)*.9);
+}
+
 .board
 {
     display: grid;
@@ -387,10 +397,4 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 .winning-message.show
 {
     display: flex;
-}
-
-:root
-{
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size)*.9);
 }
