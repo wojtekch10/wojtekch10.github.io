@@ -143,7 +143,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     overflow: hidden;
     margin: 0 auto 0 auto;
     padding: 20px 24px 20px 37px;
-    background: #8b2e2d;
+    background: rgba(139,0,0,0.5);
 }
 
 .pasek_boczny
@@ -218,7 +218,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 .button
 {
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
-    background-color: #8b2e2d;
+    background-color: rgba(139,0,0,0.5);
     border: none;
     color: whitesmoke;
     display: grid;
@@ -233,7 +233,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     background-color: darkred;
     color: whitesmoke;
-    border-color: #8b2e2d;
+    border-color: rgba(139,0,0,0.5);
 }
 
 .board
@@ -329,7 +329,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 .restartButton
 {
     font-size: 3rem;
-    background-color: #8b2e2d;
+    background-color: rgba(139,0,0,0.5);
     border: 1px solid darkred;
     padding: .25em .5em;
     margin-top:5px; ;
@@ -340,7 +340,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     background-color: darkred;
     color: whitesmoke;
-    border-color: #8b2e2d;
+    border-color: rgba(139,0,0,0.5);
 }
 .winning-message.show
 {
