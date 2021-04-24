@@ -135,7 +135,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     color: whitesmoke;
     width: 90%;
-    height: 100%;
+    height: 30vmax;
     margin: 0 auto 0 auto;
     background: rgba(139,0,0,0.5);
     overflow: auto;
@@ -145,7 +145,7 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     float: right;
     width: 15%;
-    height: 500px;
+    height: 30vmax;
     padding: 20px;
 }
 
@@ -202,9 +202,9 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 #zawartosc
 {
     position: relative;
-    width: 83%;
+    width: 81%;
     padding: 10px 20px 10px 20px;
-    height: 500px;
+    height: 30vmax;
 }
 
 #zawartosc_ttt
