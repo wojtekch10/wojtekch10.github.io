@@ -8,6 +8,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-y: scroll;
 }
 
 p
@@ -135,7 +136,6 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     color: whitesmoke;
     width: 90%;
-    height: 30vmax;
     margin: 0 auto 0 auto;
     background: rgba(139,0,0,0.5);
     overflow: auto;
@@ -145,7 +145,6 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     float: right;
     width: 15%;
-    height: 30vmax;
     padding: 20px;
 }
 
@@ -204,7 +203,6 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     position: relative;
     width: 81%;
     padding: 10px 20px 10px 20px;
-    height: 30vmax;
 }
 
 #zawartosc_ttt
@@ -212,7 +210,6 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     color: whitesmoke;
     margin: 0 auto 0 auto;
     background: rgba(139,0,0,0.5);
-
     overflow: hidden;
     width: 90%;
     padding: 40px 0;
@@ -231,14 +228,13 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
     display: grid;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
     cursor: pointer;
-    padding: 15px;
+    padding: 100px;
 }
 
 .button:hover
 {
-    padding: 15px;
+    padding: 100px;
     background-color: rgba(139,0,0,0.5);
     color: whitesmoke;
     border-color: rgba(139,0,0,0.5);
