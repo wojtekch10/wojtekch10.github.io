@@ -1,12 +1,9 @@
-html
-{
-    height: 100%;
-}
+
 
 body
 {
     color: whitesmoke;
-    font: normal .80em 'trebuchet ms', arial, sans-serif;
+    font: normal 80% 'lucida sans unicode', arial, sans-serif;
     background-image: url("background.jpg");
     height: 100%;
     background-position: center;
@@ -56,9 +53,9 @@ h2
 
 #logo
 {
-    width: 825px;
+    width: 85%;
     position: relative;
-    height: 168px;
+    height: 70%;
 }
 
 #logo #logo_text
@@ -98,10 +95,10 @@ h2
 
 #menubar
 {
-    width: 900px;
+    width: 90%;
     height: 72px;
     padding: 0;
-    background: transparent url(transparent.png) repeat;
+    background: rgba(0,0,0,0.5);
 }
 
 ul#menu, ul#menu li
@@ -119,7 +116,7 @@ ul#menu li
 ul#menu li a
 {
     letter-spacing: 0.1em;
-    font: normal 100% arial, sans-serif;
+    font: normal 100% 'lucida sans unicode', arial, sans-serif;
     display: block;
     float: left;
     height: 37px;
@@ -133,29 +130,30 @@ ul#menu li a
 ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 {
     color: #FFF;
-    background: darkred;
+    background: rgba(139,0,0,0.5);
 }
 
 #zawartosc_strony
 {
     color: whitesmoke;
-    width: 837px;
-    overflow: hidden;
+    width: 86.8%;
+    height: 500px;
     margin: 0 auto 0 auto;
     padding: 20px 24px 20px 37px;
     background: rgba(139,0,0,0.5);
+    overflow: auto;
 }
 
 .pasek_boczny
 {
     float: right;
-    width: 190px;
-    padding: 0 15px 20px 15px;
+    width: 15%;
+    height: 500px;
 }
 
 .pasek_boczny ul
 {
-    width: 178px;
+    width: 15%;
     padding: 4px 0 0 0;
     margin: 4px 0 30px 0;
 }
@@ -174,18 +172,19 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 
 .pasek_boczny li a.wybrane_menu
 {
-    color: darkred;
+
+    background: rgba(139,0,0,0.5);
     text-decoration: none;
 }
 
 #stopka
 {
-    width: 900px;
+    width: 90%;
     font: normal 100% 'lucida sans unicode', arial, sans-serif;
     height: 33px;
     padding: 24px 0 5px 0;
     text-align: center;
-    background: transparent url(transparent.png) repeat;
+    background: rgba(0,0,0,0.5);
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -206,10 +205,10 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 #zawartosc
 {
     position: relative;
-    width: 595px;
-    padding: 0;
+    width: 83%;
+    padding: 0 5px 0 0;
+    height: 500px;
 }
-
 #zawartosc ul
 {
     margin: 2px 0 22px 0;
@@ -248,8 +247,8 @@ ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
 
 .cell
 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 1px solid whitesmoke;
     display: flex;
     justify-content: center;
